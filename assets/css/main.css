@@ -10,7 +10,7 @@
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
+code, del, dfn, em, img, other, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
@@ -646,7 +646,7 @@ input, select, textarea {
 
 		.image:before {
 			pointer-events: none;
-			background-image: url("../../images/overlay.png");
+			/*background-image: url("../../images/overlay.png");*/
 			background-color: rgba(19, 21, 25, 0.5);
 			border-radius: 4px;
 			content: '';
@@ -693,6 +693,14 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+
+		.image other {
+			display: inline-block;
+			margin: 0;
+			width: 100%;
+			padding: 0;
+		}
+
 
 		.image.main {
 			display: block;
